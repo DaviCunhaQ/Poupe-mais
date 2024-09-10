@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Home(){
   return (
     <>
-      <main className='bg-verde-principal bg-[url("./assets/ilustracao.svg")] w-screen h-screen flex justify-center items-center'>
+      <main className='bg-verde-principal bg-[url("./assets/ilustration.svg")] w-screen h-screen flex justify-center items-center'>
         <div id="card" className="flex flex-col items-center bg-menta h-auto w-auto rounded-[15px] shadow-custom-light pt-8 pb-8 pr-10 pl-10">
           <div id="title" className="max-sm:justify-center max-sm:flex-col flex items-center mb-4">
             <h1 className='max-sm:mr-0 text-[#858585] text-[32px] font-semibold font-[poppins] mr-3'>Conheça o</h1>

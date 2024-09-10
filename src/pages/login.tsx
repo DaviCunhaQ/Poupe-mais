@@ -60,7 +60,7 @@ function LoginPage(){
         </div>
       </div>
       <div id="right" className="max-md:h-[30vh] max-md:justify-center max-md:w-[100vw] max-lg:w-1/2 flex w-[871px]">
-        <div className="max-md:w-[100vw] max-md:items-center max-md:bg-none h-full justify-end items-end flex bg-[url('./assets/ilustracao.svg')] w-full bg-no-repeat">
+        <div className="max-md:w-[100vw] max-md:items-center max-md:bg-none h-full justify-end items-end flex bg-[url('./assets/ilustration.svg')] w-full bg-no-repeat">
           
           <Link target="_blank" to="https://www.uxsoftware.com.br/">
             <img src={logo} className="w-[125px] h-[104px] mr-[52px] mb-[56px]" alt="" />

@@ -1,6 +1,6 @@
 import Modal from 'react-modal'
 import Icone from '../assets/iconegrafico.svg'
-import ElipseVerde from '../assets/Ellipse verde.svg'
+import ElipseVerde from '../assets/elipseVerde.svg'
 import ElipseVermelha from '../assets/elipseVermelha.svg'
 import { useContext, useEffect } from 'react'
 import { AuthContext } from '../context/authContext'
