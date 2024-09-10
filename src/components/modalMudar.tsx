@@ -5,7 +5,6 @@ import CurrencyInput from 'react-currency-input-field'
 import { userType } from '../types/userTypes'
 import { FormEvent, useState } from 'react'
 import { api } from '../services/api'
-import { Navigate, useNavigate } from 'react-router-dom'
 
 interface ModalPlusProps{
   isOpen: boolean,
@@ -14,7 +13,6 @@ interface ModalPlusProps{
 }
 
 export const ModalChange = ({isOpen, setIsOpen, user}: ModalPlusProps)=>{
-  const navigate = useNavigate()
   
   const [name, setName] = useState('')
   const [salary, setSalary] = useState(0)
@@ -75,7 +73,7 @@ export const ModalChange = ({isOpen, setIsOpen, user}: ModalPlusProps)=>{
                   placeholder="R$"
                   decimalsLimit={2}
                   prefix='R$ '
-                  onValueChange={(value, name, values) => setSalary(values?.float!)}
+                  onValueChange={(_value, _name, values) => setSalary(values?.float!)}
                   className="focus:outline-none border border-verde-contorno w-full rounded-md p-4 text-[24px] text-normal leading-normal font-normal text-verde-fundo font-[poppins] mb-[26px]"
               />
             </div>

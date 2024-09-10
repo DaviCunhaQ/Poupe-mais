@@ -3,7 +3,7 @@ import Icone from '../assets/iconemais.svg'
 import Send from '../assets/send.svg'
 import CurrencyInput from 'react-currency-input-field'
 import { userType } from '../types/userTypes'
-import { ChangeEvent, FormEvent, useState } from 'react'
+import { FormEvent, useState } from 'react'
 import { api } from '../services/api'
 
 interface ModalPlusProps{
@@ -44,7 +44,7 @@ export const ModalPlus = ({isOpen, setIsOpen, user}: ModalPlusProps)=>{
                 placeholder="R$"
                 decimalsLimit={2}
                 prefix='R$ '
-                onValueChange={(value, name, values) => setPrice(values?.float!)}
+                onValueChange={(_value, _name, values) => setPrice(values?.float!)}
                 className="focus:outline-none border border-verde-contorno w-full rounded-md p-4 text-[16px] text-normal leading-normal font-normal text-verde-fundo font-[poppins]"
           />
           <input value={descript} onChange={(e)=>{setDescript(e.target.value)}} type="text" placeholder='Descrição' className='focus:outline-none border border-verde-contorno w-full rounded-md p-4 text-[16px] text-normal leading-normal font-normal text-verde-fundo font-[poppins]'/>

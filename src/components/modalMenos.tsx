@@ -5,7 +5,6 @@ import CurrencyInput from 'react-currency-input-field'
 import { api } from '../services/api'
 import { FormEvent, useState } from 'react'
 import { userType } from '../types/userTypes'
-import { sumExpenditures } from '../utils/sumExp'
 
 interface ModalPlusProps{
   isOpen: boolean,
@@ -48,7 +47,7 @@ export const ModalNegative = ({isOpen, setIsOpen, user}: ModalPlusProps)=>{
                 placeholder="R$"
                 decimalsLimit={2}
                 prefix='R$ '
-                onValueChange={(value, name, values) => setPrice(values?.float!)}
+                onValueChange={(_value, _name, values) => setPrice(values?.float!)}
                 className="focus:outline-none border border-verde-contorno w-full rounded-md p-4 text-[16px] text-normal leading-normal font-normal text-verde-fundo font-[poppins]"
           />
           <input value={category} onChange={(e)=>{setCategory(e.target.value)}} type="text" placeholder='Categoria' className='focus:outline-none border border-verde-contorno w-full rounded-md p-4 text-[16px] text-normal leading-normal font-normal text-verde-fundo font-[poppins]'/>

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { AuthContext } from "./authContext";
-import axios, { AxiosError } from "axios";
+import axios from "axios";
 import { api } from "../services/api";
 import { useNavigate } from "react-router-dom";
 import { Balance, Expenditure, Login, Register } from "../types/formTypes";

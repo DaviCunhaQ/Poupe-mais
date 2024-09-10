@@ -46,7 +46,7 @@ function Signup(){
                 placeholder="Salário"
                 decimalsLimit={2}
                 prefix='R$ '
-                onValueChange={(value, name, values) => setSalary(values?.float!)}
+                onValueChange={(_value, _name, values) => setSalary(values?.float!)}
                 className="mb-[22px] rounded-[4px] h-[32px] w-[242px] font-[poppins] bg-menta p-[4px] outline-0"
               />
               <input value={email} onChange={(e)=>{setEmail(e.target.value)}} type="text" placeholder="Email" className="mb-[22px] rounded-[4px] h-[32px] w-[242px] font-[poppins] bg-menta p-[4px] outline-0"/>
