@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react'
 import logo from '../assets/logo.svg'
 import logoPoupeBranca from '../assets/logoPoupeBranca.svg'
-import sair from '../assets/sair.svg'
+import sair from '../assets/logout.svg'
 import elipse from '../assets/Ellipse.svg'
 import elipseMais from '../assets/elipse-mais.svg'
 import elipseMenos from '../assets/elipse-menos.svg'
